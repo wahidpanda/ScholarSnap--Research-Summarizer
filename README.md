@@ -1,9 +1,11 @@
 ## ScholarSnap - AI-Powered Research Assistant Chrome Extension ##
 
+<img width="590" height="300" alt="t1" src="https://github.com/user-attachments/assets/5b30b121-e1d2-4736-9a71-e991480422a6" />
+<img width="590" height="300" alt="t2" src="https://github.com/user-attachments/assets/490eeef1-d3bb-4321-b70c-cf5c89f7f262" />
 <img width="590" height="300" alt="t4" src="https://github.com/user-attachments/assets/a3f91dbb-a7a2-49a7-8e24-d30ccd1a0a1a" />
 <img width="590" height="300" alt="t3" src="https://github.com/user-attachments/assets/89661d58-20c8-4d36-8c34-e5ddb55930d9" />
-<img width="590" height="300" alt="t2" src="https://github.com/user-attachments/assets/490eeef1-d3bb-4321-b70c-cf5c89f7f262" />
-<img width="590" height="300" alt="t1" src="https://github.com/user-attachments/assets/5b30b121-e1d2-4736-9a71-e991480422a6" />
+
+
 
 
 
