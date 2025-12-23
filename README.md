@@ -60,7 +60,7 @@ Build the extension
 - Select the dist folder
 
 ## Project Workflow
-
+```
 graph TD
     A[User Action: <br>Open Research Paper/Upload Document] --> B[Content Extraction]
     
@@ -90,7 +90,7 @@ graph TD
     style G fill:#2196F3,stroke:#1976D2
     style N fill:#FF9800,stroke:#F57C00
     style J fill:#9C27B0,stroke:#7B1FA2
-
+```
 ## Detailed Process
 
 1. Content Acquisition
