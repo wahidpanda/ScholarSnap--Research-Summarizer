@@ -60,7 +60,7 @@ Build the extension
 - Select the dist folder
 
 ## Project Workflow
-```
+```mermaid
 graph TD
     A[User Action: <br>Open Research Paper/Upload Document] --> B[Content Extraction]
     
