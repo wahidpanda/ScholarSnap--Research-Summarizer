@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScholarSnap</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 10px;
+            width: 320px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        /* Light Mode Styles */
+        body.light-mode {
+            background-color: #ffffff;
+            color: #000000;
+        }
+
+        /* Dark Mode Styles */
+        body.dark-mode {
+            background-color: #1e1e1e;
+            color: #ffffff;
+        }
+
+        #input_text.light-mode, #result_text.light-mode {
+            background: #f0f0f0;
+            color: #000000;
+        }
+
+        #input_text.dark-mode, #result_text.dark-mode {
+            background: #2b2b2b;
+            color: #ffffff;
+        }
+
+        #input_text {
+            width: 100%;
+            height: 80px;
+            margin-bottom: 10px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            padding: 8px;
+            border-radius: 5px;
+        }
+
+        /* Button container */
+        .button-container {
+            display: flex;
+            justify-content: space-between; /* Space buttons evenly */
+            margin-bottom: 10px; /* Add space below the button container */
+        }
+
+        #btn_gemini, #btn_extract {
+            width: 48%;
+            padding: 10px;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        /* Different colors for buttons */
+        #btn_extract {
+            background-color: #28a745;
+        }
+
+        #btn_gemini {
+            background-color: #007bff;
+        }
+
+        #btn_extract:hover {
+            background-color: #218838;
+        }
+
+        #btn_gemini:hover {
+            background-color: #0056b3;
+        }
+
+        #result_text {
+            margin-top: 10px;
+            height: 150px;
+            overflow-y: auto;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        /* Progress bar */
+        #progress_bar {
+            display: none;
+            width: 100%;
+            background-color: #e0e0e0;
+            border-radius: 5px;
+            overflow: hidden;
+            margin-top: 10px;
+        }
+
+        #progress_bar div {
+            width: 0;
+            height: 10px;
+            background-color: #007bff;
+            transition: width 0.5s ease;
+        }
+
+        /* Toggle switch */
+        .toggle-switch {
+            position: absolute; /* Position the toggle switch */
+            top: 10px; /* Distance from the top */
+            right: 10px; /* Distance from the right */
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .toggle-switch label {
+            cursor: pointer;
+            font-size: 18px; /* Increase icon size */
+        }
+
+        .toggle-switch input[type="checkbox"] {
+            display: none;
+        }
+
+        /* Logo and title container */
+        .logo-title-container {
+            display: flex;
+            align-items: center; /* Center vertically */
+            margin-bottom: 5px; /* Reduced space below the container */
+        }
+
+        /* Logo styles */
+        #logo {
+            width: 75px; /* Adjust width as needed */
+            height: auto;
+            /* box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); Maintain aspect ratio */
+        }
+
+        /* Project name styles */
+        #project_name {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 0; /* Remove default margin */
+            padding-left: 5px; /* Optional: space between logo and title */
+        }
+    </style>
+</head>
+<body class="light-mode">
+    <div class="logo-title-container">
+        <img id="logo" src="D:\vs\project\saas\zx\assets\logo.png" alt="ScholarSnap Logo"> <!-- Update the path to your logo -->
+        <h2 id="project_name">ScholarSnap</h2>
+    </div>
+    <div class="toggle-switch">
+        <label for="darkModeToggle" class="sun-icon">☀️</label>
+        <input type="checkbox" id="darkModeToggle">
+        <label for="darkModeToggle" class="moon-icon">🌙</label>
+    </div>
+    <textarea id="input_text" class="light-mode" placeholder="Enter research paper text or extract from page..."></textarea>
+    <div class="button-container">
+        <button id="btn_extract">Extract Text</button>
+        <button id="btn_gemini">Summarize</button>
+    </div>
+    <div id="progress_bar">
+        <div></div>
+    </div>
+    <div id="result_text" class="light-mode"></div>
+    <script src="popup_menu.js"></script>
+</body>
+</html>
